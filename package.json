@@ -2,10 +2,10 @@
   "name": "devconnector",
   "version": "1.0.0",
   "description": "social network for developers",
-  "main": "api/index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node api/index",
-    "server": "nodemon api/index",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },

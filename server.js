@@ -1,5 +1,4 @@
 const express = require("express");
-const serverless = require("serverless-http");
 const cors = require("cors");
 const connectDB = require("../config/db");
 
@@ -29,6 +28,3 @@ app.use("/api/profile", require("../routes/api/profile"));
 app.use("/api/post", require("../routes/api/post"));
 
 app.listen(PORT, () => console.log(`server started on the PORT: ${PORT}`));
-
-module.exports = app;
-module.exports.handler = serverless(app);
