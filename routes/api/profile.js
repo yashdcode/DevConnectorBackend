@@ -2,11 +2,11 @@ const express = require("express");
 // const mongoose = require('mongoose');
 const router = express.Router();
 const config = require("config");
-const Profile = require("../../models/Profile");
-const User = require("../../models/User");
-const auth = require("../../middleware/auth");
 const request = require("request");
-const Post = require("../../models/Post");
+const Profile = require("../../models/Profile.js");
+const User = require("../../models/User.js");
+const auth = require("../../middleware/auth.js");
+const Post = require("../../models/Post.js");
 const { check, validationResult } = require("express-validator");
 
 //@route GET api/profile/me
