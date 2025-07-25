@@ -1,0 +1,45 @@
+What is Express() ? 
+
+---> express() is a function in the Express.js framework that creates an Express application object.
+ This object is the core of an Express application, providing methods for routing, middleware, and other functionalities.
+
+express() is a top-level function exported by the Express module.
+It's used to initialize a new Express application.
+It returns an instance of the Express application object.
+
+
+In Express.js, app.use() is a fundamental method used to mount middleware functions at a specified path. Middleware 
+functions are essentially interceptors that process incoming HTTP requests before they reach your route handlers. 
+Here's a breakdown of its use:
+
+In Express.js, app.get() is used to define a route handler for HTTP GET requests to a specific path. It essentially tells the server what to do when it receives a GET request at a given URL.
+it basically maps epcific URL path to callback function that will be executed when a client send a get request to that path.
+
+Key features of the Express application object:
+Routing:
+It provides methods like app.get(), app.post(), app.put(), etc., to define routes for handling different HTTP requests.
+Middleware:
+It allows you to add middleware functions to the request-response cycle. Middleware can perform tasks like parsing request bodies, handling authentication, and logging.
+Settings:
+You can configure application settings such as the template engine, static file directories, and more.
+Server:
+It has a method app.listen() to start the server and listen for incoming connections.
+In essence: express() is the starting point for creating an Express.js web application. It sets up the foundation upon which you build your server-side logic.
+
+
+In essence, express() is the entry point for creating an Express.js application. It provides the basic structure and functionality upon which you can build a wide variety of web applications, APIs, and more.
+
+What is x-auth-token?
+
+---> The X-Auth-Token header is a custom HTTP header used to exchange an authentication token, typically after a user has logged in. 
+     It's not a standard HTTP authentication header like "Authorization,".
+
+
+---> Purpose:
+To include an authentication token in HTTP requests, especially for applications that don't rely on cookies for authentication. 
+Usage:
+After a user logs in, the application might provide an X-Auth-Token as part of the login response. This token is then included in subsequent requests to identify the authenticated user. 
+Not a standard HTTP header:
+X-Auth-Token is not part of the standard HTTP authentication framework. 
+Alternative to cookies:
+It's often used when cookies aren't a suitable or available option, such as in API requests from notebooks or applications where cross-domain cookies are blocked. 

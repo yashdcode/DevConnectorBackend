@@ -1,0 +1,6 @@
+{
+  "jwtToken": "myjwttoken",
+  "mongoURL": "mongodb+srv://yashduddalwar:suMB126HugUf29Op@devconnector.t4p63pv.mongodb.net/?retryWrites=true&w=majority&appName=DevConnector",
+  "githubClientId": "Ov23liGFsjsWOUVmB5Z9",
+  "githubSecret": "cfb36fa143285819f8dd42019e25e84e18797b94"
+}
